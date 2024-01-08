@@ -1,0 +1,496 @@
+<nav
+  class="navbar navbar-expand-lg fixed-top navbar-transparent"
+  color-on-scroll="100"
+  id="navbar-top"
+>
+  <div class="container">
+    <div class="navbar-translate">
+        <span> Jobs Travel • </span> O nosso transporte popular
+      <button
+        aria-controls="navigation-index"
+        aria-label="Toggle navigation"
+        class="navbar-toggler navbar-toggler"
+        [attr.aria-expanded]="!isCollapsed"
+        (click)="isCollapsed = !isCollapsed"
+        id="navigation"
+        type="button"
+      >
+        <span class="navbar-toggler-bar bar1"> </span>
+        <span class="navbar-toggler-bar bar2"> </span>
+        <span class="navbar-toggler-bar bar3"> </span>
+      </button>
+    </div>
+    <div
+      class="navbar-collapse justify-content-end"
+      [collapse]="isCollapsed"
+      id="navigation"
+    >
+      <div class="navbar-collapse-header">
+        <div class="row">
+          <div class="col-6 collapse-brand"><a>Jobs Travel • </a></div>
+          <div class="col-6 collapse-close text-right">
+            <button
+              aria-controls="navigation-index"
+              aria-label="Toggle navigation"
+              class="navbar-toggler"
+              [attr.aria-expanded]="!isCollapsed"
+              (click)="isCollapsed = !isCollapsed"
+              id="navigation"
+              type="button"
+            >
+              <i class="tim-icons icon-simple-remove"> </i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item p-0">
+          <a
+            class="nav-link"
+            href="#"
+            placement="bottom"
+            target="_blank"
+            tooltip="Nos siga no Twitter"
+          >
+            <i class="fab fa-twitter"> </i>
+            <p class="d-lg-none d-xl-none">Twitter</p>
+          </a>
+        </li>
+        <li class="nav-item p-0">
+          <a
+            class="nav-link"
+            href="#"
+            placement="bottom"
+            target="_blank"
+            tooltip="Curta nossa página no Facebook"
+          >
+            <i class="fab fa-facebook-square"> </i>
+            <p class="d-lg-none d-xl-none">Facebook</p>
+          </a>
+        </li>
+        <li class="nav-item p-0">
+          <a
+            class="nav-link"
+            href="https://www.instagram.com/Owner_preisler"
+            placement="bottom"
+            target="_blank"
+            tooltip="Nos siga no Instagram"
+          >
+            <i class="fab fa-instagram"> </i>
+            <p class="d-lg-none d-xl-none">Instagram</p>
+          </a>
+        </li>
+        <li class="dropdown nav-item" dropdown>
+          <a
+            class="dropdown-toggle nav-link dropdown-toggle"
+            data-toggle="dropdown"
+            dropdownToggle
+            href="javascript:void(0)"
+          >
+            <i class="fa fa-cogs d-lg-none d-xl-none"> </i> Saiba mais
+          </a>
+          <div class="dropdown-menu dropdown-with-icons" *dropdownMenu>
+            <a
+              class="dropdown-item"
+              href="#"
+            >
+              <i class="tim-icons icon-send"> </i> Viagens
+            </a>
+            <a class="dropdown-item" [routerLink]="['/register']">
+              <i class="tim-icons icon-bullet-list-67"> </i> Cadastro
+            </a>
+            <a class="dropdown-item" [routerLink]="['/#']">
+              <i class="tim-icons icon-money-coins"> </i>Seja um motorista parceiro
+            </a>
+            <a class="dropdown-item" [routerLink]="['/#']">
+              <i class="tim-icons icon-single-02"> </i> Perfil
+            </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link btn btn-default d-none d-lg-block"
+            href="javascript:void(0)"
+            (click)="scrollToDownload(target)"
+          >
+            <i class="tim-icons icon-cloud-download-93"> </i> Download
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="wrapper">
+
+  
+  <div class="main">
+
+    <div class="section section-javascript" id="javascriptComponents">
+      <img class="path" src="assets/img/path5.png" />
+
+      <img class="path path1" src="assets/img/path5.png" />
+
+      <div class="container">
+      <div class="section">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-5 mb-5 mb-lg-0">
+              <h1 class="text-white font-weight-light">Você vai se surpreender</h1>
+              <p class="text-white mt-4">
+                O Novo Mecanismo De Viagens Que Cabem No Seu Bolso!
+              </p>
+              <a
+                class="btn btn-warning mt-4"
+                href="#"
+              >
+                Confiança e segurança em nossas viagens
+              </a>
+            </div>
+            <div class="col-lg-6">
+              <carousel [showIndicators]="false">
+                          
+                <slide>
+                  <img
+                    alt="Third slide"
+                    class="d-block w-100"
+                    src="assets/img/vantransporte.jpg"
+                  />
+                </slide>
+                
+                <slide>
+                  <img
+                    alt="First slide"
+                    class="d-block w-100"
+                    src="assets/img/denys.jpg"
+                  />
+                </slide>
+                <slide>
+                  <img
+                    alt="Second slide"
+                    class="d-block w-100"
+                    src="assets/img/fabien-bazanegue.jpg"
+                  />
+                </slide>
+                <slide>
+                  <img
+                    alt="Third slide"
+                    class="d-block w-100"
+                    src="assets/img/mark-finn.jpg"
+                  />
+                </slide>
+              </carousel>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="section section-tabs">
+      <div class="container">
+        <div class="title"><h3 class="mb-3">Feedback dos motoristas</h3></div>
+        <div class="row">
+          <div class="col-md-10 ml-auto col-xl-6 mr-auto">
+            <div class="card">
+              <div class="card-header">
+                <tabset class="nav-tabs-danger">
+                  <tab>
+                    <ng-template tabHeading>
+                      <i class="tim-icons icon-spaceship"> </i> Perfil
+                    </ng-template>
+                    <p>
+                      <b>Robson</b>
+                      <br />
+                      <br />
+                      Pensando mais a longo prazo,
+                      a expansão dos mercados mundiais causa impacto 
+                      indireto na reavaliação dos índices pretendidos. <br />
+
+                      <br />
+
+
+                    </p>
+                  </tab>
+                  <tab>
+                    <ng-template tabHeading>
+                      <i class="tim-icons icon-settings-gear-63"> </i> Configuração
+                    </ng-template>
+                    <p>
+                      <b> Nessa aba podemos falar sobre como melhorar o Perfil.</b>
+                      <br />
+                      <br />
+                      Por outro lado, o novo modelo 
+                      estrutural aqui preconizado nos obriga à análise
+                      dos procedimentos normalmente adotados.
+                       <br />
+
+                      <br />
+
+                    </p>
+                  </tab>
+                  <tab>
+                    <ng-template tabHeading>
+                      <i class="tim-icons icon-bag-16"> </i> Avaliações
+                    </ng-template>
+                    <p>
+                      <b>João</b>
+                      <br />
+                      <br />
+                      É importante questionar o quanto o julgamento imparcial das eventualidades deve passar por
+                       modificações independentemente do sistema de formação de quadros que corresponde às necessidades. <br />
+
+                      <br />
+                    </p>
+                  </tab>
+                </tabset>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10 ml-auto col-xl-6 mr-auto">
+            <div class="card">
+              <div class="card-header">
+                <tabset class="nav-tabs-danger">
+                  <tab heading="Perfil">
+                    <p>
+
+                      <b>Antonio</b>
+                      <br />
+                      <br />
+                      Pensando mais a longo prazo,
+                      a expansão dos mercados mundiais causa impacto indireto na
+                      reavaliação dos índices pretendidos. <br />
+                      <br />
+                    </p>
+                  </tab>
+                  <tab heading="Configuração">
+                    <p>
+                      <b> Nessa aba podemos falar sobre como melhorar o Perfil.</b>
+                      <br />
+                      <br />
+                      Por outro lado, o novo modelo 
+                      estrutural aqui preconizado nos obriga à análise
+                      dos procedimentos normalmente adotados.
+                      <br />
+                      <br />
+                    </p>
+                  </tab>
+                  <tab heading="Avaliações">
+                    <p>
+                      <b>Tamara</b>
+                      <br />
+                      <br />
+
+                      É importante questionar o quanto o julgamento imparcial das eventualidades deve passar por
+                      modificações independentemente do sistema de formação de quadros que corresponde às necessidades.
+                      <br />
+                      <br />
+                    </p>
+                  </tab>
+                </tabset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="section section-signup">
+      <div class="container">
+        <div class="squares square-1"></div>
+        <div class="squares square-2"></div>
+        <div class="squares square-3"></div>
+        <div class="squares square-4"></div>
+        <div class="row row-grid justify-content-between align-items-center">
+
+          <div class="col-lg-6 mb-lg-auto">
+            <div class="card card-register">
+              <div class="card-header">
+                <img
+                  alt="Card image"
+                  class="card-img"
+                  src="assets/img/square1-red.png"
+                />
+
+                <h4 class="card-title">Cadastre-se</h4>
+              </div>
+              <div class="card-body">
+                <form class="form">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="tim-icons icon-single-02"> </i>
+                      </div>
+                    </div>
+                    <input
+                      class="form-control"
+                      placeholder="Nome Completo"
+                      type="text"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="tim-icons icon-email-85"> </i>
+                      </div>
+                    </div>
+                    <input
+                      class="form-control"
+                      placeholder="Email"
+                      type="text"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="tim-icons icon-lock-circle"> </i>
+                      </div>
+                    </div>
+                    <input
+                      class="form-control"
+                      placeholder="Senha"
+                      type="text"
+                    />
+                  </div>
+                  <div class="form-check text-left">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" />
+
+                      <span class="form-check-sign"> </span> Eu aceito os
+                      <a href="javascript:void(0)"> termos e condições </a> .
+                    </label>
+                  </div>
+                </form>
+              </div>
+              <div class="card-footer">
+                <a
+                  class="btn btn-danger btn-round btn-lg"
+                  href="javascript:void(0)"
+                >
+                  Começar agora !
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section-examples" data-background-color="black">
+      <img class="path" src="assets/img/path1.png" />
+
+      <div class="space-50"></div>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-sm-6">
+            <a [routerLink]="['/landing']">
+              <img
+                alt="Image"
+                class="img-raised"
+                src="assets/img/landing-page.png"
+              />
+            </a>
+            <a
+              class="btn btn-simple btn-danger btn-round"
+              [routerLink]="['/landing']"
+            >
+              Conheça nosso sistema de pontuação
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <a [routerLink]="['/profile']">
+              <img
+                alt="Image"
+                class="img-raised"
+                src="assets/img/profile-page.png"
+              />
+            </a>
+            <a
+              class="btn btn-simple btn-danger btn-round"
+              [routerLink]="['/profile']"
+            >
+              Conheça nossos motoristas
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"><h1 class="title">Jobs Travel •</h1></div>
+        <div class="col-md-3">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/home']"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/landing']"> Landing </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/register']"> Cadastre-se </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/profile']"> Perfil </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                SAC Jobstravel
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Sobre Nós
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Blog
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#
+              ">
+                Licença
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3 class="title">Siga nossas redes sociais:</h3>
+          <div class="btn-wrapper profile">
+            <a
+              class="btn btn-icon btn-neutral btn-round btn-simple mr-1"
+              href="#"
+              target="_blank"
+            >
+              <i class="fab fa-twitter"> </i>
+            </a>
+            <a
+              class="btn btn-icon btn-neutral btn-round btn-simple mr-1"
+              href="#"
+              target="_blank"
+            >
+              <i class="fab fa-facebook-square"> </i>
+            </a>
+            <a
+              class="btn btn-icon btn-neutral btn-round btn-simple"
+              href="#"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"> </i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
