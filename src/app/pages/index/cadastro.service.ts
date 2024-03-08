@@ -19,7 +19,7 @@ export class CadastroService {
   // Método para adicionar um novo cadastro ao arquivo JSON
   addCadastro(novoCadastro: any): Observable<any> {
     let cadastros = this.getCadastros();
-    cadastros.push(novoCadastro); // Adiciona o novo cadastro à lista existente
+    //cadastros.push(novoCadastro); // Adiciona o novo cadastro à lista existente
     return this.http.put(this.apiUrl, cadastros);
   }
 }
